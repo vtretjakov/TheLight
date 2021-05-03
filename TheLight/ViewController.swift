@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         view.backgroundColor = isLightOn ? .white : .black
     } // можно так (короткая версия)
     
-    @IBAction func ButtonPressed() {
+    //MARK: - Methods
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         isLightOn.toggle()
         updateUI()
     }
-    
 }
-
